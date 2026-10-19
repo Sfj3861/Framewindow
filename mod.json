@@ -1,0 +1,34 @@
+{
+	"geode": "5.9.0",
+	"gd": {
+		"android": "2.2081"
+	},
+	"version": "v0.1.0",
+	"id": "sfj3861.frame-window",
+	"name": "Frame Window",
+	"developer": "Sfj3861",
+	"description": "Registra pulsaciones y liberaciones durante la partida con su frame y tiempo, y las muestra en un overlay configurable.",
+	"tags": ["interface", "enhancement"],
+	"settings": {
+		"window-frames": {
+			"type": "int",
+			"name": "Ventana (frames)",
+			"description": "Ventana de referencia, en actualizaciones de PlayLayer, usada solo para analizar y mostrar cuantos inputs ocurrieron recientemente. No modifica la fisica ni los timings del juego.",
+			"default": 10,
+			"min": 0,
+			"max": 30
+		},
+		"show-overlay": {
+			"type": "bool",
+			"name": "Mostrar overlay",
+			"description": "Muestra u oculta el overlay con la informacion durante la partida.",
+			"default": true
+		},
+		"show-details": {
+			"type": "bool",
+			"name": "Mostrar detalles",
+			"description": "Anade al overlay la ventana de frames, el ultimo evento y el dt medio.",
+			"default": true
+		}
+	}
+}
